@@ -31,9 +31,16 @@ while(letter.length <= 5) {
 
 
 // 4. Create a loop that "sings" the song 99 bottles of beer on the wall. 
-for(let i=99; i >= 0; i--)
-	console.log(i + " bottles of beer on the wall, " + i + " bottles of beer. Take one down, pass it around, " + i-1 + " bottles of beer on the wall")
+let beerNumber = 99;
 
+while(beerNumber > 0) {
+	console.log(beerNumber + " " + "bottles of beer on the wall, " + beerNumber + " " + "bottles of beer.");
+	beerNumber = beerNumber - 1;
+	console.log("Take one down, pass it around, " + beerNumber + " " + "bottles of beer on the wall");
+	if(beerNumber === 0) {
+		console.log("No more bottles of beer. :(")
+	}
+}
 
 
 
